@@ -1,0 +1,28 @@
+package src;
+
+//Faça um programa que leia as duas notas parciais obtidas por um aluno numa disciplina ao longo de um semestre,
+// e calcule a sua média. Se a nota for maior ou igual a 6.0, deve ser apresentada a mensagem “Aprovado”,
+// caso contrário deve ser apresentada a mensagem “Reprovado”.
+
+import java.util.Scanner;
+
+public class Exercicio5 {
+    public static void main(String[] args) {
+
+        Scanner escaner = new Scanner(System.in);
+        System.out.println("Digite a primeira nota: ");
+        int nota1 = escaner.nextInt();
+
+        Scanner escaner1 = new Scanner(System.in);
+        System.out.println("Digite a segunda nota: ");
+        int nota2 = escaner1.nextInt();
+
+        double media = nota1 + nota2 / 2.0;
+
+        if (media >= 6){
+            System.out.println("Aprovado");
+        }else {
+            System.out.println("Reprovado");
+        }
+    }
+}
