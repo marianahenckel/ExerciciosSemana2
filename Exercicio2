@@ -1,0 +1,62 @@
+package src;
+//Faça um Programa que leia 2 números e em seguida pergunte ao usuário qual operação ele deseja realizar.
+// O resultado da operação deve ser acompanhado de uma frase que diga se o número é:
+// Par ou ímpar, ou se é positivo ou negativo
+
+import java.util.Scanner;
+
+public class Exercicio2 {
+    public static void main(String[] args) {
+
+        Scanner escaner = new Scanner(System.in);
+        System.out.println("Digite um numero: ");
+        int n1 = escaner.nextInt();
+
+        Scanner escaner1 = new Scanner(System.in);
+        System.out.println("Digite um numero: ");
+        int n2 = escaner1.nextInt();
+
+        Scanner escanerop = new Scanner(System.in);
+        System.out.println("Digite uma operação (+, -, * ou /): ");
+        char operação = escanerop.next().charAt(0);
+
+        switch (operação) {
+            case '+':
+                 int resultadoadicao = n1 + n2;
+            if (resultadoadicao %2 == 0) {
+                System.out.println("O resultado é " + resultadoadicao + " esse numero é par");
+            } else {
+                System.out.println("O resultado é " + resultadoadicao + " esse numero é ímpar");
+            }
+            break;
+
+            case '-':
+                int resultadosubtracao = n1 - n2;
+            if (resultadosubtracao %2 == 0){
+                System.out.println("O resultado é " + resultadosubtracao + " esse numero é par");
+            } else {
+                System.out.println("O resultado é " + resultadosubtracao + " esse numero é ímpar");
+            }
+            break;
+
+            case '*':
+                int resultadomultiplicacao = n1 * n2;
+            if (resultadomultiplicacao %2 == 0){
+                System.out.println("O resultado é " + resultadomultiplicacao + " esse numero é par");
+            } else {
+                System.out.println("O resultado é " + resultadomultiplicacao + " esse numero é ímpar");
+            }
+            break;
+
+            case '/':
+                int resultadodivisao = n1 / n2;
+            if (resultadodivisao %2 == 0){
+                System.out.println("O resultado é " + resultadodivisao + " esse numero é par");
+            } else {
+                System.out.println("O resultado é " + resultadodivisao + " esse numero é ímpar");
+            }
+            break;
+        }
+
+    }
+}
