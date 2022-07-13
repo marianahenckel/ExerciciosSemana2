@@ -1,0 +1,19 @@
+pacote  src ;
+
+importar  java . útil . Scanner ;
+
+//Faça um programa que peça dois números ao usuário e mostre qual o maior e qual o menor.
+public  class  Exercício3 {
+    public  static  void  main ( String [] args ) {
+
+        Scanner  escaner = new  Scanner ( System . in );
+        Sistema . fora . println ( "Digite um numero: " );
+        int  n1 = escaner . nextInt ();
+
+        Scanner  escaner1 = new  Scanner ( System . in );
+        Sistema . fora . println ( "Digite um numero: " );
+        int  n2 = escaner1 . nextInt ();
+
+        Sistema . fora . println ( "O maior numero é" + Math . max ( n1 , n2 ) + ". E o menor numero é " + Math . min ( n1 , n2 ));
+    }
+}
