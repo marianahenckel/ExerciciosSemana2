@@ -1,0 +1,23 @@
+package src;
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+//Faça um programa em java que receba o valor do salário mínimo e o valor do salário de um funcionário,
+// calcule e mostre a quantidade de salários mínimos que ganha esse funcionário.
+public class Exercicio1 {
+    public static void main(String[] args) {
+
+        double salariom = 1212.00;
+        DecimalFormat df = new DecimalFormat("#.##");
+
+        Scanner salariof1 = new Scanner(System.in);
+        System.out.println("Qual é o valor do seu salário? ");
+        double salariof = salariof1.nextDouble();
+
+        double qtdsalm = salariof / salariom;
+
+
+       System.out.println("Você recebe " + df.format(qtdsalm) +" salários minímos.");
+
+    }
+}
