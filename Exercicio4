@@ -1,0 +1,27 @@
+package src;
+//Crie um programa que peça um número ao usuário e armazene ele na variável x.
+// Depois peça outro número e armazene na variável y. Mostre esses números.
+// Em seguida, faça com que x passe a ter o valor de y, e que y passe a ter o valor de x.
+
+import java.util.Scanner;
+
+public class Exercicio4 {
+    public static void main(String[] args) {
+
+        Scanner escaner = new Scanner(System.in);
+        System.out.println("Digite um numero X: ");
+        int x = escaner.nextInt();
+
+        Scanner escaner1 = new Scanner(System.in);
+        System.out.println("Digite um numero Y: ");
+        int y = escaner1.nextInt();
+
+        int x1 = x;
+        x = y;
+        y = x1;
+
+
+        System.out.println("O numero x é: " + x + " e o numero y é: " + y);
+
+    }
+}
